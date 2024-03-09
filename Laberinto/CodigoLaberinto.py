@@ -1,4 +1,4 @@
-/*Codigo proporcionado por el profesor: */
+# Codigo proporcionado por el profesor: 
 
 def solve_maze(maze, start, end):
     stack = [start]
