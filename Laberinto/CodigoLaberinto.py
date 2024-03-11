@@ -28,15 +28,17 @@ def solve_maze(maze, start, end): #Se declara la función para resolver el laber
 if __name__ == "__main__":
     # 0 = camino abierto, 1 = muro, S = inicio, E = fin
     maze = [ #se crea la matriz, la cual será nuestro laberinto
-        ['1', '1', '1', '1', '1'],
-        ['S', '0', '1', '0', '1'],
-        ['1', '0', '1', '0', '1'],
-        ['1', '0', '0', '0', 'E'],
-        ['1', '1', '1', '1', '1']
+        ['1', '1', '1', '1', '1', '1', '1'],
+        ['S', '0', '1', '0', '0', '0', '1'],
+        ['1', '0', '1', '0', '1', '0', 'E'],
+        ['1', '0', '1', '0', '1', '1', '1'],
+        ['1', '0', '1', '0', '1', '1', '1'],
+        ['1', '0', '1', '0', '1', '1', '1'],
+        ['1', '0', '0', '0', '1', '1', '1']
     ]
 
     start = (1, 0) #se coloca la posición desde la cual empieza el laberinto
-    end = (3, 4) #se coloca la posición final del laberinto (el destino al cual debe llegar)
+    end = (2, 6) #se coloca la posición final del laberinto (el destino al cual debe llegar)
     solved, path = solve_maze(maze, start, end) #se manda a llamar a la función, la cual retornará la matriz resultante si se resolvio el laberinto, de igualmanera se retorna si se pudo resolver o no 
 
     if solved: #condición, si solved es verdadero, entonces:
